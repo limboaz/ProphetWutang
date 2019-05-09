@@ -1,5 +1,4 @@
-# Python program to find the k most frequent words 
-# from data set 
+#LDA analysis code for two time periods: 2010-2014, 2015-2019
 from collections import Counter
 from pprint import pprint
 import string
@@ -55,7 +54,7 @@ def preprocess_word():
     f.close()
 
 
-# Pass the split_it list to instance of Counter class. 
+# This part of code intended to obtained the top k words in the given corpus, but we decided to do something else. 
 # Counter = Counter(split_it) 
 
 # most_common() produces k frequently encountered 
@@ -64,9 +63,8 @@ def preprocess_word():
 # for word in most_occur:
 #     print(word[0]+ "
 # :" +str(word[1]))
-def tokenizer(arg):
-    return split_it
 
+#LDA analysis code
 def lda_lda(docs, num_topics, num_iters, n_top_words):
     vectorizer = CountVectorizer(max_features=1000,
                         stop_words='english',
